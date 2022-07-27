@@ -237,8 +237,9 @@ L.Control.JSDialog = L.Control.extend({
 
 		if (!isModalPopup) {
 			var titlebar = L.DomUtil.create('div', 'ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix', container);
+			console.log(data);
 			var title = L.DomUtil.create('span', 'ui-dialog-title', titlebar);
-			title.innerText = data.title;
+			title.innerText = data.title || data.dialogid;
 			var button = L.DomUtil.create('button', 'ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close', titlebar);
 			L.DomUtil.create('span', 'ui-button-icon ui-icon ui-icon-closethick', button);
 		} else {
