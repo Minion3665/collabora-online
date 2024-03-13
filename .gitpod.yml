@@ -45,7 +45,7 @@ tasks:
       ./configure --enable-silent-rules --with-lokit-path=/workspace/include --with-lo-path=/workspace/instdir --enable-debug -enable-cypress --disable-setcap
       gp sync-done configuring
       cp .gitpod-files/coolwsd-gitpod.xml coolwsd.xml
-      mkdir .vscode
+      mkdir .vscode -p
       cp .gitpod-files/settings.json .vscode/settings.json
   - name: Building
     init: gp sync-await configuring
