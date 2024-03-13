@@ -31,7 +31,7 @@ fi;
 echo "Using Docker Hub Repository: '$DOCKER_HUB_REPO' with tag '$DOCKER_HUB_TAG'."
 
 if [ -z "$CORE_BRANCH" ]; then
-  CORE_BRANCH="distro/collabora/co-22.05"
+  CORE_BRANCH="distro/collabora/co-24.04"
 fi;
 echo "Building core branch '$CORE_BRANCH'"
 
