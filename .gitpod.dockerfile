@@ -17,9 +17,8 @@ RUN update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-12 3665 --slave 
 RUN apt-get build-dep -y libreoffice
 
 RUN apt-get install -y python3
-RUN apt-get install -y python3-pip
-RUN pip install lxml
-RUN pip install polib
+RUN apt-get install -y python3-lxml
+RUN apt-get install -y python3-polib
 
 RUN apt-get install -y ca-certificates curl
 RUN install -m 0755 -d /etc/apt/keyrings
